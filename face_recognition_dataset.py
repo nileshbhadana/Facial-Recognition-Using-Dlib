@@ -36,6 +36,13 @@ while cam.isOpened():
         cv2.imwrite(dir_name+"/"+"image"+str(counter)+".jpg",frame)
         counter=counter+1
         print(counter)
+        if int(choice)== 1:
+	print "My OS "
+elif int(choice)==4:
+	data=raw_input("Type to search on gooogle:")
+	webbrowser.open_new_tab('https://www.google.com/search?q='+data)
+else:
+	print "Invalid choice"
     
     cv2.imshow("live",frame)
     
